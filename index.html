@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahil Vangari Portfolio</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<style>
+body { scroll-behavior: smooth; }
+
+.glass {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.glass:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+</style>
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
+
+<!-- NAVBAR -->
+<nav class="fixed w-full z-50 bg-black/30 backdrop-blur-md p-4 flex justify-between">
+<h1 class="font-bold">Sahil Vangari</h1>
+<div class="space-x-6">
+<a href="#home">Home</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+<img src="Sahil Photo.jpg" class="w-60 h-70 rounded-full border-4 border-blue-500 mb-6">
+
+<h1 class="text-5xl font-bold">Sahil Ashok Vangari</h1>
+<p class="text-blue-400 mt-2">AI Engineer | LLM Systems | Backend</p>
+
+<p class="max-w-xl mt-4 text-gray-300">
+Building production-ready AI systems with LLMs, computer vision, and scalable backend infrastructure.
+Focused on latency optimisation, microservices, and real-world deployment.
+</p>
+
+<div class="mt-6 flex gap-4">
+<a href="#projects" class="bg-blue-500 px-6 py-3 rounded">View Projects</a>
+<a href="C:\Users\HP\OneDrive\Desktop\15-04\Sahil Ashok Vangari_CV (4).pdf" target=_blank class="border px-6 py-3 rounded">Download CV</a>
+</div>
+</section>
+
+<!-- FEATURED PROJECT -->
+<section class="py-20 px-6 text-center">
+<h2 class="text-3xl font-bold mb-10">Featured Project</h2>
+
+<div class="glass p-8 max-w-4xl mx-auto">
+<h3 class="text-2xl font-bold">AI Image Analysis System</h3>
+
+<p class="mt-4 text-gray-300">
+Multi-modal AI system combining image captioning, YOLO object detection, and diffusion models.
+Built with async pipelines reducing inference latency and deployed on AWS microservices.
+</p>
+
+<p class="mt-3 text-sm text-blue-400">
+Tech: Flask • YOLOv8 • Stable Diffusion • AWS • Async APIs
+</p>
+
+<div class="mt-4 flex justify-center gap-4">
+<button onclick="toggle('fp')" class="bg-green-500 px-4 py-2 rounded">View</button>
+</div>
+
+<div id="fp" class="hidden mt-4">
+<img src="project-output.png" class="rounded-lg">
+</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-20 px-6">
+<h2 class="text-3xl text-center font-bold mb-10">Projects</h2>
+
+<div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+<div class="glass p-6">
+<h3 class="font-bold text-xl">FurSaver AI Platform</h3>
+<p class="text-gray-300 mt-2">
+Reduced API latency by 30% using async processing and DB optimisation.
+Designed scalable REST architecture with authentication.
+</p>
+<p class="text-blue-400 text-sm mt-2">Flask • PostgreSQL • AWS</p>
+<a href="https://github.com/SilentXD11/Fursaver_main" target=_blank class="mt-3 inline-block bg-blue-500 px-4 py-2 rounded">GitHub</a>
+</div>
+
+<div class="glass p-6">
+<h3 class="font-bold text-xl">Fake Review Detection</h3>
+<p class="text-gray-300 mt-2">
+Fine-tuned BERT model for real-time spam detection with class balancing and NLP pipeline.
+</p>
+<p class="text-blue-400 text-sm mt-2">BERT • NLP • Flask</p>
+<a href="https://github.com/SilentXD11/Fake_Review" target=_blank class="mt-3 inline-block bg-blue-500 px-4 py-2 rounded">GitHub</a>
+</div>
+
+</div>
+</section>
+
+<!-- SKILLS (ORIGINAL SCROLL STYLE KEPT) -->
+<section id="skills" class="py-20 overflow-hidden">
+<h2 class="text-3xl font-bold text-center mb-10">Skills</h2>
+
+<div class="relative w-full overflow-hidden">
+<div class="flex w-max animate-scroll gap-16">
+
+<!-- KEEPING YOUR ORIGINAL SKILLS ITEMS -->
+<!-- (Shortened here — you should paste your full original list exactly) -->
+
+<div class="text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>Python</p>
+  </div>
+
+  <!-- JavaScript -->
+  <div class="text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>JavaScript</p>
+  </div>
+
+  <!-- Docker -->
+  <div class="text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>Docker</p>
+  </div>
+
+  <!-- AWS -->
+  <div class="text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>AWS</p>
+  </div>
+
+  <!-- SQL -->
+  <div class="text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>SQL</p>
+  </div>
+
+  <!-- PyTorch -->
+  <div class="text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>PyTorch</p>
+  </div>
+
+  <!-- Hugging Face -->
+  <div class="text-center">
+    <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>Hugging Face</p>
+  </div>
+
+  <!-- BERT -->
+  <div class="text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" class="w-16 h-16 object-contain mx-auto">
+    <p>BERT</p>
+  </div>
+
+  <!-- MongoDB -->
+  <div class="text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>MongoDB</p>
+  </div>
+
+  <!-- PostgreSQL -->
+  <div class="text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>PostgreSQL</p>
+  </div>
+
+  <!-- Flask -->
+  <div class="text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>Flask</p>
+  </div>
+
+  <!-- FastAPI -->
+  <div class="text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>FastAPI</p>
+  </div>
+
+  <!-- Transformers -->
+  <div class="text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/2942/2942813.png" class="w-16 h-16 object-contain mx-auto">
+    <p>Transformers</p>
+  </div>
+
+  <!-- LLMs -->
+  <div class="text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" class="w-16 h-16 object-contain mx-auto">
+    <p>LLMs</p>
+  </div>
+
+  <!-- Diffusion -->
+  <div class="text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" class="w-16 h-16 object-contain mx-auto">
+    <p>Diffusion</p>
+  </div>
+
+  <!-- YOLO -->
+  <div class="text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" class="w-16 h-16 object-contain mx-auto">
+    <p>YOLO</p>
+  </div>
+
+  <!-- CV -->
+  <div class="text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="w-16 h-16 object-contain mx-auto">
+    <p>Computer Vision</p>
+  </div>
+
+  <!-- NLP -->
+  <div class="text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" class="w-16 h-16 object-contain mx-auto">
+    <p>NLP</p>
+  </div>
+
+  <div class="text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>Python</p>
+  </div>
+
+  <!-- JavaScript -->
+  <div class="text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>JavaScript</p>
+  </div>
+
+  <!-- Docker -->
+  <div class="text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>Docker</p>
+  </div>
+
+  <!-- AWS -->
+  <div class="text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>AWS</p>
+  </div>
+
+  <!-- SQL -->
+  <div class="text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>SQL</p>
+  </div>
+
+  <!-- PyTorch -->
+  <div class="text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>PyTorch</p>
+  </div>
+
+  <!-- Hugging Face -->
+  <div class="text-center">
+    <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>Hugging Face</p>
+  </div>
+
+  <!-- BERT -->
+  <div class="text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" class="w-16 h-16 object-contain mx-auto">
+    <p>BERT</p>
+  </div>
+
+  <!-- MongoDB -->
+  <div class="text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>MongoDB</p>
+  </div>
+
+  <!-- PostgreSQL -->
+  <div class="text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>PostgreSQL</p>
+  </div>
+
+  <!-- Flask -->
+  <div class="text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>Flask</p>
+  </div>
+
+  <!-- FastAPI -->
+  <div class="text-center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" class="w-16 h-16 object-contain mx-auto">
+    <p>FastAPI</p>
+  </div>
+
+  <!-- Transformers -->
+  <div class="text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/2942/2942813.png" class="w-16 h-16 object-contain mx-auto">
+    <p>Transformers</p>
+  </div>
+
+  <!-- LLMs -->
+  <div class="text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" class="w-16 h-16 object-contain mx-auto">
+    <p>LLMs</p>
+  </div>
+
+  <!-- Diffusion -->
+  <div class="text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" class="w-16 h-16 object-contain mx-auto">
+    <p>Diffusion</p>
+  </div>
+
+  <!-- YOLO -->
+  <div class="text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" class="w-16 h-16 object-contain mx-auto">
+    <p>YOLO</p>
+  </div>
+
+  <!-- CV -->
+  <div class="text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="w-16 h-16 object-contain mx-auto">
+    <p>Computer Vision</p>
+  </div>
+
+  <!-- NLP -->
+  <div class="text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" class="w-16 h-16 object-contain mx-auto">
+    <p>NLP</p>
+  </div>
+
+</div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-20 text-center">
+<h2 class="text-3xl font-bold mb-10">Experience</h2>
+
+<div class="glass p-6 max-w-3xl mx-auto">
+<h3 class="font-bold">AI Developer (Self Projects)</h3>
+<p class="text-gray-300 mt-2">
+Built and deployed scalable AI systems integrating LLMs, CV, and backend APIs.
+Focused on async pipelines, optimisation, and production deployment.
+</p>
+</div>
+</section>
+
+<!-- CURRENT -->
+<section class="py-20 text-center">
+<h2 class="text-3xl font-bold mb-6">Currently Working On</h2>
+<p class="text-gray-300">
+MiniGPT-4 • Agentic AI systems • Latency optimisation
+</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 text-center">
+<h2 class="text-3xl font-bold mb-6">Contact</h2>
+
+<div class="flex justify-center gap-10">
+<a href="https://github.com/SilentXD11" target=_blank >GitHub</a>
+<a href="https://linkedin.com/in/sahil-vangari" target=_blank >LinkedIn</a>
+</div>
+
+<p class="mt-4">sahil.vangari0411@gmail.com</p>
+
+<button onclick="copyEmail()" class="mt-2 bg-blue-500 px-3 py-1 rounded">
+Copy Email
+</button>
+
+<p id="copyMsg" class="hidden text-green-400 mt-2">Copied!</p>
+</section>
+
+<script>
+function toggle(id) {
+document.getElementById(id).classList.toggle('hidden');
+}
+
+function copyEmail() {
+navigator.clipboard.writeText("sahil.vangari0411@gmail.com");
+document.getElementById("copyMsg").classList.remove("hidden");
+setTimeout(() => {
+document.getElementById("copyMsg").classList.add("hidden");
+},1500);
+}
+
+ScrollReveal().reveal('section', {
+distance: '50px',
+duration: 1000,
+origin: 'bottom',
+interval: 200
+});
+</script>
+
+</body>
+</html>
